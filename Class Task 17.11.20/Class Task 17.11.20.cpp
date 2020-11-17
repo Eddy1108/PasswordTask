@@ -50,7 +50,7 @@ int main()
         system("cls");
         board.printBoard();
 
-        switch (_getch()) {
+        switch (_getch()) {     //Move the arrow or change the letters
         case KEY_UP:
             if (board.board.at(board.pos) != 'Z')
             board.board.at(board.pos)++;
@@ -72,5 +72,3 @@ int main()
     system("cls");  board.printBoard();
     std::cout << "PASSWORD ACCEPTED";
 }
-
-
